@@ -5,11 +5,16 @@ import AddContact from "./AddContact.js";
 import ContactList from "./ContactList.js";
 
 function App() {
+  const contacts = [
+    { id: "1", name: "Tahseen", email: "rajatahseen@gmail.com" },
+    { id: "2", name: "Akhtar", email: "rajaakhtar@gmail.com" },
+  ];
   return (
     <div className="ui container">
       <Header />
       <AddContact />
-      <ContactList />
+      <ContactList contacts={contacts} />
+      {/* props- pass data {contacts} from parent to child */}
     </div>
   );
 }
