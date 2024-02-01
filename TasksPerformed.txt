@@ -1,0 +1,18 @@
+Following 6 steps are completed in previous commits, which are basicallyy displaying list off static contacts::
+1.React App created and deployed.
+2.Setup project, Delete unnecessary files, Add components,images folder in src, Add Semantic UI CSS link in index.hml
+3.Add Functional components(Header.js,ContactList.js), Add Class component(AddContact.js)
+4.Define contacts Array in App.js & pass to child ContactList.js , receive this list as props & display in child ContactList.js
+5.Add contactlists in new component 'ContactCard' & utilize this in Contactist comp.
+6.Add Github Pages to deploy on github free and browse app from server.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+7. Add contacts from the Form to a Dynamic "contacts" list in App.js  & empty Form fields after submition in AddContact.js. And show added contacts in ContactList.js
+ a)Remove static "contacts" Array from "App.js" and utilize React Hook => 'useState' that allows to add state to your functional components.
+ b)Use array destructuring to declare a state variable called contacts and a function called setContacts to update that state in App.js
+ c)Added '<AddContact addContactHandler={addContactHandler} />' as child in App.js to receieve form submitted data and use addContactHandler propety as handler to update the state.
+ d)In AddContact.js class component add onChange event in name and email fields to set the State of both with the entered values + Add value attribute and assign state prop value.
+ e)Make form submitable. Then check validation of not empty fields. Then assign "this.props.addContactHandler(this.state)"
+ f)To make form fields empty again =>   this.setState({ name: "", email: "" });
+
