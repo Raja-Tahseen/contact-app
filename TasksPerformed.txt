@@ -16,3 +16,9 @@ Following 6 steps are completed in previous commits, which are basicallyy displa
  e)Make form submitable. Then check validation of not empty fields. Then assign "this.props.addContactHandler(this.state)"
  f)To make form fields empty again =>   this.setState({ name: "", email: "" });
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+8.On refreshing page data is lost. Make use of Local Storage (Utilize React hook -> 'useEffect').
+ a)Import 'useEffect', define LocalStorageKey
+ b)Then define 2 useEffect() to store contacts state array data as json.stringify and to to retrieve it when page is refreshed.
+
