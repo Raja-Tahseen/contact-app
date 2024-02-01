@@ -22,3 +22,16 @@ Following 6 steps are completed in previous commits, which are basicallyy displa
  a)Import 'useEffect', define LocalStorageKey
  b)Then define 2 useEffect() to store contacts state array data as json.stringify and to to retrieve it when page is refreshed.
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+9.Delete Contact and update local storage data according
+ a) Update index.js file to React18 reuirement to remove warning message.
+ b) Update the retrieval of local storage data as according to React 18.
+ c) To create unique id for a contact along with name and email properties install -> npm i 'uuidv4' + 'uuid'
+ d) Update setContacts by creating a new object with id property.
+ e) Add 'removeContactHandler' arrow function in App.js which receieve id of contact, filters contacts array and removes the matched id contact.
+ f) Add new prop 'getContactId' inside <ContactList> child and bind it with removeContactHandler.
+ g) Now inside child component 'ContactList', Add a new prop 'clickHandler' for its child 'ContactCard.js'. Bind it with deleteContactHandler.
+ h) Now deleteContactHandler will receive id as param and pas to to parent property.
+ i) Finally, a onClick Event is added on del icon which pass id to its parent property when clicked.
+
